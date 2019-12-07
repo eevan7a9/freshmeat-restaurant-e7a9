@@ -79,6 +79,9 @@ nav {
   height: 80px;
   width: 100%;
   background: #a8890f;
+  top: 0;
+  position: sticky;
+  z-index: 10;
   ul {
     float: right;
     margin-right: 40px;
