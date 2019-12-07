@@ -4,19 +4,19 @@
       <label class="logo">LOGO</label>
       <ul id="navItems">
         <li>
-          <router-link to="/">HOME</router-link>
+          <router-link to="/" @click.native="toggleNavbar">HOME</router-link>
         </li>
         <li>
-          <router-link to="/about">About</router-link>
+          <router-link to="/about" @click.native="toggleNavbar">About</router-link>
         </li>
         <li>
-          <router-link to="/reservation">Reservation</router-link>
+          <router-link to="/reservation" @click.native="toggleNavbar">Reservation</router-link>
         </li>
         <li>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/contact" @click.native="toggleNavbar">Contact</router-link>
         </li>
         <li>
-          <router-link to="/team">Team</router-link>
+          <router-link to="/team" @click.native="toggleNavbar">Team</router-link>
         </li>
       </ul>
       <label id="icon">
