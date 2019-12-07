@@ -24,10 +24,11 @@ export default {
 .showcase-wrapper {
   padding: 80px 0 50px 0;
   min-height: calc(100vh - 210px);
-  background: url("~@/assets/images/bg-restaurant.jpg");
-
+  background-image: url("~@/assets/images/bg-restaurant.jpg");
   background-size: cover;
   align-items: center;
+  overflow: hidden;
+
   .img-wrapper {
     text-align: center;
     padding: 0 1rem;
@@ -36,6 +37,7 @@ export default {
       border-radius: 50%;
       max-width: 100%;
       height: auto;
+      animation: float 6s ease-in-out infinite;
     }
     // img:hover {
     //   background: none;
@@ -47,7 +49,7 @@ export default {
       padding-top: 2rem;
       font-family: "Anton", sans-serif;
       font-size: 3rem;
-      color: #c8530e;
+      color: #a8890f;
       text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
         2px 3px #201f1e;
     }
@@ -61,7 +63,7 @@ export default {
     }
   }
   button {
-    background: #c8530e;
+    background: #a8890f;
     color: aliceblue;
     padding: 1rem;
     border: 2px solid aliceblue;
@@ -72,11 +74,25 @@ export default {
   button:hover {
     background: aliceblue;
     transition: 1s;
-    color: #c8530e;
-    border-color: #c8530e;
+    color: #a8890f;
+    border-color: #a8890f;
     padding-left: 2rem;
     font-weight: 700;
     padding-right: 2rem;
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatex(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatex(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatex(0px);
+    }
   }
 }
 </style>

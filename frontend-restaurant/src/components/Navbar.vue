@@ -78,7 +78,7 @@ export default {
 nav {
   height: 80px;
   width: 100%;
-  background: #c8530e;
+  background: #a8890f;
   ul {
     float: right;
     margin-right: 40px;

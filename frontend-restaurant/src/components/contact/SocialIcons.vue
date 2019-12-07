@@ -87,9 +87,9 @@ export default {};
     margin-right: 1rem;
     padding: 10px;
     border-radius: 50%;
-    border: 2px #c8530e solid;
+    border: 2px #a8890f solid;
     svg {
-      color: #c8530e;
+      color: #a8890f;
       cursor: pointer;
     }
   }
