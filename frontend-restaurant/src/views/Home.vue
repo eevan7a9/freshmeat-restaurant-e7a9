@@ -3,17 +3,21 @@
     <section id="showcase">
       <Showcase :scrollTarget="'#gallery'" @scrollTo="scrollTo" />
     </section>
-    <div class="gallery-wrapper" id="gallery"></div>
+    <div class="container" id="gallery">
+      <SignatureDish />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Showcase from "@/components/home/Showcase.vue";
+import SignatureDish from "@/components/home/SignatureDish.vue";
 export default {
   name: "home",
   components: {
-    Showcase
+    Showcase,
+    SignatureDish
   },
   methods: {
     scrollTo(selector) {
@@ -25,8 +29,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.gallery-wrapper {
-  height: 900px;
-  background: red;
+.home {
+  background: aliceblue;
 }
 </style>
