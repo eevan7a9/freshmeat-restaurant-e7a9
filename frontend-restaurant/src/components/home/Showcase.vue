@@ -38,6 +38,7 @@ $mainColor: #a8890f;
   min-height: calc(100vh - 180px);
   background-image: url("~@/assets/images/bg-restaurant.jpg");
   background-size: cover;
+  background-position: center;
   align-items: center;
   overflow: hidden;
 
