@@ -34,11 +34,12 @@ $mainColor: #a8890f;
   header {
     font-size: 2rem;
     font-weight: 900;
+    text-transform: uppercase;
     font-family: "Anton", sans-serif;
     color: $mainColor;
     text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
       2px 3px #201f1e;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
   }
 }
 .card-wrapper {

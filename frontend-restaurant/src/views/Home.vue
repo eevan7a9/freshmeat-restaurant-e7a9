@@ -1,11 +1,14 @@
 <template>
   <div class="home">
     <section id="showcase">
-      <Showcase :scrollTarget="'#gallery'" @scrollTo="scrollTo" />
+      <Showcase :scrollTarget="'#signature_dish'" @scrollTo="scrollTo" />
     </section>
-    <div class="container" id="gallery">
+    <section class="container" id="signature_dish">
       <SignatureDish />
-    </div>
+    </section>
+    <section class="container" id="schedule">
+      <Schedule />
+    </section>
   </div>
 </template>
 
@@ -13,11 +16,13 @@
 // @ is an alias to /src
 import Showcase from "@/components/home/Showcase.vue";
 import SignatureDish from "@/components/home/SignatureDish.vue";
+import Schedule from "@/components/home/Schedule.vue";
 export default {
   name: "home",
   components: {
     Showcase,
-    SignatureDish
+    SignatureDish,
+    Schedule
   },
   methods: {
     scrollTo(selector) {
