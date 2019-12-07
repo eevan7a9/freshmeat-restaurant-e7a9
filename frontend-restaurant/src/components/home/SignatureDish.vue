@@ -1,20 +1,30 @@
 <template>
   <div class="signature-wrapper">
-    <header>Signature Dish</header>
-    <div class="card">
-      <h1>Something</h1>
-    </div>
-    <div>
-      <h1>Something</h1>
-    </div>
-    <div>
-      <h1>Something</h1>
+    <header>Signature Dishes</header>
+    <div class="card-wrapper">
+      <div class="card" v-for="(dish, index) of signature_dishes" :key="index">
+        <div class="card-body">
+          <img src="https://via.placeholder.com/250" alt="image" />
+          <h1>{{ dish.name }}</h1>
+          <p>{{ dish.description }}</p>
+          <div>${{ dish.price }}</div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { mapGetters, mapActions } from "vuex";
+export default {
+  computed: mapGetters(["signature_dishes"]),
+  methods: {
+    ...mapActions(["getSignatureDish"])
+  },
+  created() {
+    this.getSignatureDish();
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -31,10 +41,48 @@ $mainColor: #a8890f;
     letter-spacing: 2px;
   }
 }
-.card {
-  width: 300px;
-  padding: 1rem;
-  background: #fff;
-  border: 2px solid $mainColor;
+.card-wrapper {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  .card {
+    padding: 1rem;
+    .card-body {
+      max-width: 300px;
+      background: #fff;
+      border: 2px solid $mainColor;
+      padding-bottom: 1rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
+        transition: 0.7s;
+      }
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 18px;
+        font-family: "Anton", sans-serif;
+        padding: 1rem;
+        text-align: left;
+      }
+      p {
+        font-family: "Archivo Narrow", sans-serif;
+        padding: 1rem;
+        padding-top: 0;
+        text-align: left;
+      }
+      div {
+        padding: 1rem;
+        background: $mainColor;
+        width: 100px;
+        font-weight: 900;
+      }
+    }
+  }
 }
 </style>

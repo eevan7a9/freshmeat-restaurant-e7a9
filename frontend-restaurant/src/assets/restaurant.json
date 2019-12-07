@@ -2,51 +2,51 @@
   "signature_dish": [
     {
       "id": 1,
-      "name": "dish one",
-      "description": "something",
+      "name": "London broil ",
+      "description": "Made by broiling or grilling marinated flank steak, then cutting it across the grain into thin strips.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 20.25
     },
     {
       "id": 2,
-      "name": "dish two",
-      "description": "something",
+      "name": "Chateaubriand",
+      "description": "Consists of a large center cut fillet of tenderloin grilled between two lesser pieces of meat that are discarded after cooking.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 19.0
     },
     {
       "id": 3,
-      "name": "dish three",
-      "description": "something",
+      "name": "Steak au poivre",
+      "description": "Consists of a steak, traditionally a filet mignon, coated with coarsely cracked peppercorns and then cooked.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 39.99
     },
     {
       "id": 4,
-      "name": "dish four",
-      "description": "something",
+      "name": "Beef Wellington",
+      "description": "Fillet steak coated with pâté (often pâté de foie gras) and duxelles, which is then wrapped in parma ham and puff pastry, then baked.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 40.75
     },
     {
       "id": 5,
-      "name": "dish five",
-      "description": "something",
+      "name": "pork tenderloin sandwich",
+      "description": "Contains a breaded and fried cutlet similar to the Wiener Schnitzel and is popular in the Midwest region of the United Statesething.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 10.99
     },
     {
       "id": 6,
-      "name": "dish six",
-      "description": "something",
+      "name": "Salisbury steak",
+      "description": "made from a blend of ground beef and other ingredients and usually served with gravy or brown sauce.",
       "image_src": "something",
       "thumbnail": "thumbnail",
-      "price": 9999
+      "price": 23.5
     }
   ]
 }
