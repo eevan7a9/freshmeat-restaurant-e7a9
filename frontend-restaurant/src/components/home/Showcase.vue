@@ -9,6 +9,19 @@
     </div>
     <SocialIcons />
     <button>Reservation</button>
+    <p class="mouse-wrapper">
+      <svg
+        class="mouse"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 76 130"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
+          <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+        </g>
+      </svg>
+    </p>
   </div>
 </template>
 <script>
@@ -21,9 +34,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+$mainColor: #a8890f;
 .showcase-wrapper {
-  padding: 80px 0 50px 0;
-  min-height: calc(100vh - 210px);
+  padding: 50px 0 50px 0;
+  min-height: calc(100vh - 180px);
   background-image: url("~@/assets/images/bg-restaurant.jpg");
   background-size: cover;
   align-items: center;
@@ -46,10 +60,10 @@ export default {
   }
   .showcase-texts {
     h1 {
-      padding-top: 2rem;
+      padding-top: 1rem;
       font-family: "Anton", sans-serif;
       font-size: 3rem;
-      color: #a8890f;
+      color: $mainColor;
       text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
         2px 3px #201f1e;
     }
@@ -63,7 +77,7 @@ export default {
     }
   }
   button {
-    background: #a8890f;
+    background: $mainColor;
     color: aliceblue;
     padding: 1rem;
     border: 2px solid aliceblue;
@@ -74,8 +88,8 @@ export default {
   button:hover {
     background: aliceblue;
     transition: 1s;
-    color: #a8890f;
-    border-color: #a8890f;
+    color: $mainColor;
+    border-color: $mainColor;
     padding-left: 2rem;
     font-weight: 700;
     padding-right: 2rem;
@@ -92,6 +106,43 @@ export default {
     100% {
       box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
       transform: translatex(0px);
+    }
+  }
+  .mouse-wrapper {
+    margin-top: 1rem;
+    .mouse {
+      max-width: 30px;
+      width: 100%;
+      height: auto;
+    }
+
+    .scroll {
+      animation-name: scroll;
+      animation-duration: 1.5s;
+      animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
+      animation-iteration-count: infinite;
+      transform-origin: 50% 20.5px;
+      will-change: transform, opacity;
+      opacity: 1;
+    }
+
+    .scroll-link {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll {
+    0%,
+    20% {
+      transform: translateY(0) scaleY(1);
+    }
+
+    100% {
+      transform: translateY(36px) scaleY(2);
+      opacity: 0;
     }
   }
 }
