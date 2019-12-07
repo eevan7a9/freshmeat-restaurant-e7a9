@@ -16,4 +16,5 @@ export default {
 <style>
 @import url("./assets/reset.css");
 @import url("./assets/main.css");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 </style>
