@@ -1,0 +1,52 @@
+{
+  "signature_dish": [
+    {
+      "id": 1,
+      "name": "dish one",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    },
+    {
+      "id": 2,
+      "name": "dish two",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    },
+    {
+      "id": 3,
+      "name": "dish three",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    },
+    {
+      "id": 4,
+      "name": "dish four",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    },
+    {
+      "id": 5,
+      "name": "dish five",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    },
+    {
+      "id": 6,
+      "name": "dish six",
+      "description": "something",
+      "image_src": "something",
+      "thumbnail": "thumbnail",
+      "price": 9999
+    }
+  ]
+}
