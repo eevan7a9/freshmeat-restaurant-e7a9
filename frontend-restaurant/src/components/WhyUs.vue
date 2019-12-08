@@ -70,7 +70,10 @@ $mainColor: #a8890f;
       font-size: 18px;
       color: $mainColor;
       font-family: "Archivo Narrow", sans-serif;
-      text-decoration: underline;
+      font-weight: 900;
+      text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #392d2a,
+        1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
+      letter-spacing: 2px;
       padding: 1rem;
     }
     p {
