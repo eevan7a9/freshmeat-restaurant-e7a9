@@ -14,6 +14,11 @@
     <section id="whyus">
       <WhyUs />
     </section>
+    <section id="carousel">
+      <div class="container">
+        <RestaurantCarousel />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -23,13 +28,15 @@ import Showcase from "@/components/home/Showcase.vue";
 import SignatureDish from "@/components/SignatureDish.vue";
 import Schedule from "@/components/Schedule.vue";
 import WhyUs from "@/components/WhyUs.vue";
+import RestaurantCarousel from "@/components/RestaurantCarousel";
 export default {
   name: "home",
   components: {
     Showcase,
     SignatureDish,
     Schedule,
-    WhyUs
+    WhyUs,
+    RestaurantCarousel
   },
   methods: {
     scrollTo(selector) {
@@ -44,7 +51,8 @@ export default {
 $mainColor: #a8890f;
 .home {
   background: aliceblue;
-  #schedule {
+  #schedule,
+  #carousel {
     background: $mainColor;
   }
 }
