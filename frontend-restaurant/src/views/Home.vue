@@ -6,8 +6,13 @@
     <section class="container" id="signature_dish">
       <SignatureDish />
     </section>
-    <section class="container" id="schedule">
-      <Schedule />
+    <section id="schedule">
+      <div class="container">
+        <Schedule />
+      </div>
+    </section>
+    <section id="whyus">
+      <WhyUs />
     </section>
   </div>
 </template>
@@ -17,12 +22,14 @@
 import Showcase from "@/components/home/Showcase.vue";
 import SignatureDish from "@/components/SignatureDish.vue";
 import Schedule from "@/components/Schedule.vue";
+import WhyUs from "@/components/WhyUs.vue";
 export default {
   name: "home",
   components: {
     Showcase,
     SignatureDish,
-    Schedule
+    Schedule,
+    WhyUs
   },
   methods: {
     scrollTo(selector) {
@@ -34,7 +41,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+$mainColor: #a8890f;
 .home {
   background: aliceblue;
+  #schedule {
+    background: $mainColor;
+  }
 }
 </style>

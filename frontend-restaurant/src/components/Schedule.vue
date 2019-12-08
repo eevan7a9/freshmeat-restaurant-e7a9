@@ -24,9 +24,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$mainColor: #a8890f;
+$mainColor: aliceblue;
 .schedule-wrapper {
-  padding: 1rem 0;
+  padding: 3rem 0;
   header {
     font-size: 2rem;
     font-weight: 900;
@@ -49,10 +49,11 @@ $mainColor: #a8890f;
       font-weight: 900;
       border: 2px solid $mainColor;
       padding: 1rem;
+      color: $mainColor;
     }
     p.active {
-      background: #a8890f;
-      color: aliceblue;
+      background: $mainColor;
+      color: #a8890f;
     }
   }
 }

@@ -40,10 +40,10 @@ $mainColor: #a8890f;
     text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
       2px 3px #201f1e;
     letter-spacing: 5px;
+    margin-bottom: 2rem;
   }
 }
 .card-wrapper {
-  padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
