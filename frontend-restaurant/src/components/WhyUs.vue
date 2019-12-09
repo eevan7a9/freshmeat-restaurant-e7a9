@@ -2,6 +2,7 @@
   <div class="whyus-wrapper">
     <div class="container">
       <header>Why us?</header>
+      <DotDivider />
       <div class="info">
         <img src="@/assets/images/chef.svg" alt srcset />
         <div class="left">
@@ -31,7 +32,12 @@
   </div>
 </template>
 <script>
-export default {};
+import DotDivider from "@/components/DotDivider.vue";
+export default {
+  components: {
+    DotDivider
+  }
+};
 </script>
 <style lang="scss" scoped>
 $mainColor: #a8890f;

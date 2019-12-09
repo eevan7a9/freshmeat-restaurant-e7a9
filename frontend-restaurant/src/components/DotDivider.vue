@@ -15,7 +15,7 @@ export default {};
 
 .divider {
   position: relative;
-  margin-top: 90px;
+  margin-top: 0px;
   height: 1px;
 }
 
@@ -26,7 +26,7 @@ export default {};
   left: 5%;
   right: 5%;
   width: 90%;
-  height: 1px;
+  height: 3px;
   background-image: linear-gradient(
     to right,
     transparent,
@@ -44,8 +44,8 @@ export default {};
   width: 18px;
   height: 18px;
   background-color: goldenrod;
-  border: 3px solid rgb(48, 49, 51);
-  border-radius: 30%;
+  border: 2px solid rgb(48, 49, 51);
+  border-radius: 10%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
 }
 </style>

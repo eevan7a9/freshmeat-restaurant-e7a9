@@ -1,6 +1,7 @@
 <template>
   <div class="signature-wrapper">
     <header>Signature Dishes</header>
+    <DotDivider />
     <div class="card-wrapper">
       <div class="card" v-for="(dish, index) of signature_dishes" :key="index">
         <div class="card-body">
@@ -16,7 +17,11 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
+import DotDivider from "@/components/DotDivider.vue";
 export default {
+  components: {
+    DotDivider
+  },
   computed: mapGetters(["signature_dishes"]),
   methods: {
     ...mapActions(["getSignatureDish"])
