@@ -68,7 +68,7 @@ $mainColor: #a8890f;
   }
   #carousel {
     padding-top: 10rem;
-    padding-bottom: 1rem;
+    padding-bottom: 4rem;
   }
   /*------------------*/
   /*  SKEW CLOCKWISE  */
