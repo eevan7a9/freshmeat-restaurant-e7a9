@@ -7,7 +7,7 @@
       :mouse-drag="true"
       paginationPosition="bottom"
       :centerMode="true"
-      :autoplay="true"
+      :autoplay="false"
       :autoplayTimeout="4000"
       :loop="true"
       paginationColor="#333"
@@ -49,20 +49,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.VueCarousel {
+  border: 3px solid aliceblue;
+  padding-bottom: 2rem;
+}
 .carousel-wrapper {
   // background: #333;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   .img-container {
     height: 700px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    border: 3px aliceblue solid;
+    border-bottom: 3px aliceblue solid;
     cursor: move;
     .text-container {
       background: rgba(0, 0, 0, 0.281);
       bottom: 0;
-      width: 100%;
+      width: 90%;
       padding: 2rem;
       position: absolute;
       header {
