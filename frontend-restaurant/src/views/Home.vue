@@ -23,6 +23,11 @@
         <RestaurantCarousel />
       </div>
     </section>
+    <section id="chefs">
+      <div class="container">
+        <OurChefs />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -33,6 +38,7 @@ import SignatureDish from "@/components/SignatureDish.vue";
 import Schedule from "@/components/Schedule.vue";
 import WhyUs from "@/components/WhyUs.vue";
 import RestaurantCarousel from "@/components/RestaurantCarousel";
+import OurChefs from "@/components/OurChefs.vue";
 export default {
   name: "home",
   components: {
@@ -40,7 +46,8 @@ export default {
     SignatureDish,
     Schedule,
     WhyUs,
-    RestaurantCarousel
+    RestaurantCarousel,
+    OurChefs
   },
   methods: {
     scrollTo(selector) {
