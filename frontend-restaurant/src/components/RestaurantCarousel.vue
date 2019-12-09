@@ -3,7 +3,7 @@
     <carousel
       :per-page="1"
       :navigationEnabled="true"
-      :navigationClickTargetSize="21"
+      :navigationClickTargetSize="11"
       :mouse-drag="true"
       paginationPosition="bottom"
       :centerMode="true"
@@ -57,6 +57,7 @@ export default {
     width: 100%;
     background-size: cover;
     background-position: center;
+    border: 3px aliceblue solid;
     cursor: move;
     .text-container {
       background: rgba(0, 0, 0, 0.281);
