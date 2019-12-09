@@ -48,5 +48,31 @@
       "thumbnail": "thumbnail",
       "price": 23.5
     }
+  ],
+  "carousel": [
+    {
+      "id": 1,
+      "header": "Fresh and High Quality",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.",
+      "img_src": "bar.jpg"
+    },
+    {
+      "id": 2,
+      "header": "Clean and Calm",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.",
+      "img_src": "bar-2.jpg"
+    },
+    {
+      "id": 3,
+      "header": "Chefs for passion",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.",
+      "img_src": "service.jpg"
+    },
+    {
+      "id": 4,
+      "header": "Beyond the boundaries of taste",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.",
+      "img_src": "hotel.jpg"
+    }
   ]
 }

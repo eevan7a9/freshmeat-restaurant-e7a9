@@ -9,51 +9,19 @@
       :centerMode="true"
       :autoplay="true"
       :autoplayTimeout="4000"
+      :loop="true"
       paginationColor="#333"
       paginationActiveColor="aliceblue"
       class="inner-carousel"
     >
-      <slide>
+      <slide v-for="carousel in carousel_items" v-bind:key="carousel.id">
         <div
           class="img-container"
-          :style="{'background-image': 'url(' + require('../assets/images/bar.jpg') + ')'}"
+          :style="{'background-image': 'url(' + require('../assets/images/' + carousel.img_src)+')'}"
         >
           <div class="text-container">
-            <header>Fresh and High Quality</header>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.</p>
-          </div>
-        </div>
-      </slide>
-      <slide>
-        <div
-          class="img-container"
-          :style="{'background-image': 'url(' + require('../assets/images/bar-2.jpg') + ')'}"
-        >
-          <div class="text-container">
-            <header>Clean and Calm</header>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.</p>
-          </div>
-        </div>
-      </slide>
-      <slide>
-        <div
-          class="img-container"
-          :style="{'background-image': 'url(' + require('../assets/images/service.jpg') + ')'}"
-        >
-          <div class="text-container">
-            <header>Chefs for passion</header>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.</p>
-          </div>
-        </div>
-      </slide>
-      <slide>
-        <div
-          class="img-container"
-          :style="{'background-image': 'url(' + require('../assets/images/hotel.jpg') + ')'}"
-        >
-          <div class="text-container">
-            <header>Beyond the boundaries of taste</header>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.</p>
+            <header>{{ carousel.header }}</header>
+            <p>{{ carousel.text }}</p>
           </div>
         </div>
       </slide>
@@ -63,10 +31,19 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import Restaurant from "@/assets/restaurant.json";
 export default {
   components: {
     Carousel,
     Slide
+  },
+  data() {
+    return {
+      carousel_items: []
+    };
+  },
+  created() {
+    this.carousel_items = Restaurant["carousel"];
   }
 };
 </script>
