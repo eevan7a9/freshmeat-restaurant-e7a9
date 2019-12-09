@@ -6,14 +6,18 @@
     <section class="container" id="signature_dish">
       <SignatureDish />
     </section>
+
     <section id="schedule">
       <div class="container">
         <Schedule />
       </div>
+      <div class="skew-c"></div>
     </section>
+
     <section id="whyus">
       <WhyUs />
     </section>
+    <div class="skew-c-2"></div>
     <section id="carousel">
       <div class="container">
         <RestaurantCarousel />
@@ -54,6 +58,46 @@ $mainColor: #a8890f;
   #schedule,
   #carousel {
     background: $mainColor;
+  }
+  #carousel {
+    padding-top: 5rem;
+  }
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+  .skew-cc {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, aliceblue 49%, $mainColor 50%),
+      linear-gradient(-50deg, $mainColor 16px, #000 0);
+  }
+  .skew-cc-2 {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to right bottom, $mainColor 49%, aliceblue 50%),
+      linear-gradient(-50deg, aliceblue 16px, #000 0);
+  }
+
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+  .skew-c {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, $mainColor 49%, aliceblue 50%);
+  }
+  .skew-c-2 {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    background: linear-gradient(to left bottom, aliceblue 49%, $mainColor 50%);
   }
 }
 </style>
