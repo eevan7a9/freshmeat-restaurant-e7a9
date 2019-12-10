@@ -74,5 +74,47 @@
       "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, impedit.",
       "img_src": "hotel.jpg"
     }
+  ],
+  "gallery" : [
+    {
+      "id" : 1,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/bar_0qzATQdjhI.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/bar_0qzATQdjhI.jpg"
+    },
+    {
+      "id": 2,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/beans_oS3kEloN4.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/beans_oS3kEloN4.jpg"
+    },
+    {
+      "id": 3,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/beeffire_iMR256fO9.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/beeffire_iMR256fO9.jpg"
+    },
+    {
+      "id": 4,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/chef-bake__7dH7XyCs.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/chef-bake__7dH7XyCs.jpg"
+    },
+    {
+      "id": 5,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/girl-drink_0Wu6VmuDN5.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/girl-drink_0Wu6VmuDN5.jpg"
+    },
+    {
+      "id": 6,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/hamburger_K4rJ90gQu.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/hamburger_K4rJ90gQu.jpg"
+    },
+    {
+      "id": 7, 
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/rast-silver_yIarI1Zzm.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/rast-silver_yIarI1Zzm.jpg"
+    },
+    {
+      "id": 8,
+      "small" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-250,h-200/salmon_Ss3FAgCA3.jpg",
+      "large" : "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/salmon_Ss3FAgCA3.jpg"
+    }
   ]
 }
