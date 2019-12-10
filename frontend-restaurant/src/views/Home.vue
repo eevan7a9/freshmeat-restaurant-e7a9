@@ -28,6 +28,9 @@
         <OurChefs />
       </div>
     </section>
+    <section id="gallery">
+      <Gallery />
+    </section>
   </div>
 </template>
 
@@ -39,6 +42,7 @@ import Schedule from "@/components/Schedule.vue";
 import WhyUs from "@/components/WhyUs.vue";
 import RestaurantCarousel from "@/components/RestaurantCarousel";
 import OurChefs from "@/components/OurChefs.vue";
+import Gallery from "@/components/Gallery.vue";
 export default {
   name: "home",
   components: {
@@ -47,7 +51,8 @@ export default {
     Schedule,
     WhyUs,
     RestaurantCarousel,
-    OurChefs
+    OurChefs,
+    Gallery
   },
   methods: {
     scrollTo(selector) {
@@ -63,7 +68,8 @@ $mainColor: #a8890f;
 .home {
   background: aliceblue;
   #schedule,
-  #carousel {
+  #carousel,
+  #gallery {
     background: $mainColor;
   }
   #carousel {
