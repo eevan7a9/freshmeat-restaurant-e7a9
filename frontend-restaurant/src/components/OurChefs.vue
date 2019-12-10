@@ -18,6 +18,23 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente tenetur architecto quas minus aliquid dolore consequuntur optio dolor veniam tempore, totam similique sint.</p>
       </div>
     </div>
+    <button>
+      TEAM
+      <!-- <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="13 17 18 12 13 7" />
+        <polyline points="6 17 11 12 6 7" />
+      </svg>-->
+    </button>
   </div>
 </template>
 
@@ -94,6 +111,30 @@ $mainColor: #a8890f;
         background: rgba(0, 0, 0, 0.459);
         transition: 0.5s;
       }
+    }
+  }
+  button {
+    background: #333;
+    border: 3px solid $mainColor;
+    padding: 10px 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: $mainColor;
+    text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #392d2a,
+      1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
+    letter-spacing: 2px;
+    svg {
+      margin-left: 3px;
+    }
+    &:hover {
+      background: aliceblue;
+      transition: 1s;
     }
   }
 }
