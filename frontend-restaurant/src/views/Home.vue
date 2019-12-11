@@ -35,6 +35,11 @@
     <section id="makeReservation">
       <MakeReservation />
     </section>
+    <section id="footer">
+      <div class="container">
+        <Footer />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -48,6 +53,7 @@ import RestaurantCarousel from "@/components/RestaurantCarousel";
 import OurChefs from "@/components/OurChefs.vue";
 import Gallery from "@/components/Gallery.vue";
 import MakeReservation from "@/components/MakeReservation.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   name: "home",
   components: {
@@ -58,7 +64,8 @@ export default {
     RestaurantCarousel,
     OurChefs,
     Gallery,
-    MakeReservation
+    MakeReservation,
+    Footer
   },
   methods: {
     scrollTo(selector) {
@@ -75,7 +82,8 @@ $mainColor: #a8890f;
   background: aliceblue;
   #schedule,
   #carousel,
-  #gallery {
+  #gallery,
+  #footer {
     background: $mainColor;
   }
   #carousel {
@@ -84,6 +92,9 @@ $mainColor: #a8890f;
   }
   #gallery {
     padding-top: 5rem;
+  }
+  #makeReservation {
+    padding-bottom: 4rem;
   }
   /*------------------*/
   /*  SKEW CLOCKWISE  */
