@@ -28,8 +28,14 @@
         <OurChefs />
       </div>
     </section>
+    <div class="skew-cc"></div>
     <section id="gallery">
       <Gallery />
+    </section>
+    <section id="makeReservation">
+      <div class="container">
+        <MakeReservation />
+      </div>
     </section>
   </div>
 </template>
@@ -43,6 +49,7 @@ import WhyUs from "@/components/WhyUs.vue";
 import RestaurantCarousel from "@/components/RestaurantCarousel";
 import OurChefs from "@/components/OurChefs.vue";
 import Gallery from "@/components/Gallery.vue";
+import MakeReservation from "@/components/MakeReservation.vue";
 export default {
   name: "home",
   components: {
@@ -52,7 +59,8 @@ export default {
     WhyUs,
     RestaurantCarousel,
     OurChefs,
-    Gallery
+    Gallery,
+    MakeReservation
   },
   methods: {
     scrollTo(selector) {
@@ -73,8 +81,11 @@ $mainColor: #a8890f;
     background: $mainColor;
   }
   #carousel {
-    padding-top: 10rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  #gallery {
+    padding-top: 5rem;
   }
   /*------------------*/
   /*  SKEW CLOCKWISE  */
