@@ -160,8 +160,8 @@
           Submit
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
+            width="15"
+            height="15"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -311,10 +311,17 @@ $mainColor: #a8890f;
       font-weight: 900;
       text-transform: uppercase;
       border: rgb(116, 85, 0) solid 3px;
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+      margin-left: auto;
       &:hover {
         background: aliceblue;
         border: 2px solid $mainColor;
         color: #333;
+      }
+      svg {
+        margin-bottom: -2px;
       }
     }
   }
@@ -343,6 +350,7 @@ $mainColor: #a8890f;
           1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
         // background: #07070642;
       }
+      // modal button
       button {
         margin-top: 10px;
         padding: 10px 2rem;
