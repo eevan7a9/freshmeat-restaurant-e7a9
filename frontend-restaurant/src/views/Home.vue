@@ -33,9 +33,7 @@
       <Gallery />
     </section>
     <section id="makeReservation">
-      <div class="container">
-        <MakeReservation />
-      </div>
+      <MakeReservation />
     </section>
   </div>
 </template>
