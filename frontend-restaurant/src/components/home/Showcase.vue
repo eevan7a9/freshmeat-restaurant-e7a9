@@ -7,7 +7,7 @@
       <h1>100% Non-GMO</h1>
       <h2>I want more, I want food. Fresh Food - it's like heaven!</h2>
     </div>
-    <SocialIcons />
+    <SocialIcons class="social-icons" />
     <button>Reservation</button>
     <MouseScroller @scrollTo="scrollTo" :target="scrollTarget" />
   </div>
@@ -106,6 +106,9 @@ $mainColor: #a8890f;
       box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
       transform: translatex(0px);
     }
+  }
+  .social-icons {
+    padding: 1.5rem 0;
   }
 }
 </style>
