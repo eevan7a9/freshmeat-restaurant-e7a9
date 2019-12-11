@@ -81,7 +81,6 @@ export default {};
 .icons-wrapper {
   display: flex;
   justify-content: center;
-  padding: 1rem 0 1rem 0;
   .icon-container {
     background: aliceblue;
     margin-right: 1rem;
