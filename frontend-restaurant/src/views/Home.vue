@@ -33,7 +33,7 @@
       <Gallery />
     </section>
     <section id="makeReservation">
-      <MakeReservation />
+      <MakeReservation :pulse="1" />
     </section>
     <section id="footer">
       <div class="container">
@@ -100,6 +100,7 @@ $mainColor: #a8890f;
     background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg");
     background-size: cover;
     background-position: bottom;
+    padding-top: 4rem;
     padding-bottom: 4rem;
   }
   /*------------------*/

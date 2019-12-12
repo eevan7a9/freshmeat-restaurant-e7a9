@@ -1,6 +1,6 @@
 <template>
   <div class="make-reservation-wrapper">
-    <header>Make Reservation</header>
+    <header :class="{'pulse-style' : pulse}">Make Reservation</header>
     <div class="container">
       <DotDivider />
     </div>
@@ -193,6 +193,9 @@
 <script>
 import DotDivider from "@/components/DotDivider.vue";
 export default {
+  props: {
+    pulse: Boolean
+  },
   components: {
     DotDivider
   },
@@ -235,14 +238,18 @@ $mainColor: #a8890f;
     text-transform: uppercase;
     font-family: "Anton", sans-serif;
     color: $mainColor;
-    text-shadow: 2px 0 #f9eded, 0 1px #827373, 3.5px 3px #807a77,
-      2px 3px #847f7a;
+    text-shadow: -3px 0 #dfc1c1, 0 1px #ececec, 3.5px 3px #998c8c,
+      2px 3px #eeece9;
     letter-spacing: 5px;
     margin-bottom: 2rem;
+  }
+  .pulse-style {
+    animation: pulsate 1.5s ease-in-out infinite;
   }
   .form-wrapper {
     background: rgba(0, 0, 0, 0.274);
     border: 3px solid $mainColor;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
     padding: 2rem;
     max-width: 700px;
     margin-right: auto;
