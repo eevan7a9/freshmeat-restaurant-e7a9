@@ -12,10 +12,15 @@
   overflow: hidden;
   padding: 0 15px;
 }
+/* overide VueCarousel button */
 .VueCarousel-navigation-button {
   color: aliceblue !important;
   margin: 0 10px !important;
   font-size: 20px !important;
+}
+/* overide leaflet z-index */
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  z-index: 1 !important;
 }
 .fade-enter-active,
 .fade-leave-active {

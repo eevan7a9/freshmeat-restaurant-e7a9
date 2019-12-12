@@ -1,12 +1,9 @@
 <template>
   <div class="contact-wrapper">
     <div class="contact-content">
-      <div class="map">
-        <LMap :zoom="zoom" :maxZoom="13" :minZoom="13" :center="center">
-          <LTileLayer :url="url"></LTileLayer>
-          <LMarker :lat-lng="markerLatLng"></LMarker>
-        </LMap>
-      </div>
+      <header>Contact us</header>
+      <DotDivider />
+      <SocialIcons />
       <form @submit.prevent="submit">
         <div class="contact-form">
           <div class="input-form">
@@ -19,10 +16,30 @@
           </div>
           <div class="text-form">
             <label>Message</label>
-            <textarea v-model="form.message" placeholder="Hello, we want to know..."></textarea>
+            <textarea v-model="form.message" placeholder="Hello, we..."></textarea>
           </div>
+          <button type="submit">SEND</button>
         </div>
       </form>
+      <div class="address-info">
+        <h1>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>Street. Kurfürstendamm 64, City Rostock Mecklenburg-Vorpommern
+        </h1>
+      </div>
+      <Map />
     </div>
     <section id="footer">
       <div class="container">
@@ -33,28 +50,24 @@
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker } from "vue2-leaflet";
+import Map from "@/components/contact/Map.vue";
+import SocialIcons from "@/components/contact/SocialIcons.vue";
+import DotDivider from "@/components/DotDivider.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   components: {
-    LMap,
-    LTileLayer,
-    LMarker,
+    DotDivider,
+    SocialIcons,
+    Map,
     Footer
   },
   data() {
     return {
-      url: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
-      zoom: 13,
-      center: [47.41322, -1.219482],
-      markerLatLng: [47.41322, -1.219482],
       form: {}
     };
   },
-  methods:{
-      submit(){
-          
-      }
+  methods: {
+    submit() {}
   }
 };
 </script>
@@ -62,15 +75,34 @@ export default {
 <style lang="scss" scoped>
 $mainColor: #a8890f;
 .contact-wrapper {
+  background: url("https://cdn.pixabay.com/photo/2016/11/21/16/02/bar-1846137_960_720.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding-top: 5rem;
+  font-family: "Bebas Neue", cursive;
+  header {
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    color: $mainColor;
+    text-shadow: -3px 0 #f0efef, 0 1px #f4f1f1, 3.5px 3px #998c8c,
+      2px 3px #847f7a;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+  }
   .contact-content {
     min-height: 90vh;
     .contact-form {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       max-width: 500px;
       padding: 2rem 2rem;
       margin-right: auto;
       margin-left: auto;
       border: 3px solid $mainColor;
-      font-family: "Bebas Neue", cursive;
+      background: #110c057c;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
       label {
         font-size: 20px;
         color: $mainColor;
@@ -95,6 +127,8 @@ $mainColor: #a8890f;
           border: none;
           border-bottom: 3px solid $mainColor;
           text-align: center;
+          background: aliceblue;
+          padding: 1rem 10px;
         }
       }
       .text-form {
@@ -108,15 +142,45 @@ $mainColor: #a8890f;
           border: none;
           border-bottom: 3px solid $mainColor;
           text-align: left;
+          background: aliceblue;
+          padding: 1rem 10px;
+        }
+      }
+      button {
+        margin-top: 10px;
+        padding: 1rem 2rem;
+        background: $mainColor;
+        border-radius: 10%;
+        cursor: pointer;
+        color: aliceblue;
+        transition: 0.7s;
+        font-weight: 900;
+        text-transform: uppercase;
+        border: rgb(116, 85, 0) solid 3px;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        &:hover {
+          background: aliceblue;
+          border: 2px solid $mainColor;
+          color: #333;
+        }
+        svg {
+          margin-bottom: -2px;
         }
       }
     }
-    .map {
-      margin-bottom: 3rem;
-      width: 100%;
-      height: 500px;
-      border: 3px solid $mainColor;
+    .address-info {
       background: $mainColor;
+      margin-top: 5rem;
+      padding: 0.5rem 0;
+      color: aliceblue;
+      font-size: 20px;
+      letter-spacing: 1.5px;
+      // width: 80%;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
   #footer {
