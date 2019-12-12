@@ -54,6 +54,8 @@ $mainColor: aliceblue;
     p.active {
       background: $mainColor;
       color: #a8890f;
+      animation: pulsate 1s ease-out infinite;
+      opacity: 0.5;
     }
   }
 }

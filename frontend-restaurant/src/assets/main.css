@@ -37,6 +37,17 @@
   transform: translateY(10px);
   opacity: 0;
 }
+@keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
 @media (max-width: 600px) {
   .container {
     max-width: 100%;
