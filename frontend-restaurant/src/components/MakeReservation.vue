@@ -1,7 +1,9 @@
 <template>
   <div class="make-reservation-wrapper">
     <header>Make Reservation</header>
-    <DotDivider />
+    <div class="container">
+      <DotDivider />
+    </div>
     <div class="form-wrapper">
       <form @submit.prevent="submit">
         <div class="input-wrapper">
@@ -233,12 +235,15 @@ $mainColor: #a8890f;
     text-transform: uppercase;
     font-family: "Anton", sans-serif;
     color: $mainColor;
-    text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
-      2px 3px #201f1e;
+    text-shadow: 2px 0 #f9eded, 0 1px #827373, 3.5px 3px #807a77,
+      2px 3px #847f7a;
     letter-spacing: 5px;
     margin-bottom: 2rem;
   }
   .form-wrapper {
+    background: rgba(0, 0, 0, 0.274);
+    border: 3px solid $mainColor;
+    padding: 2rem;
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
@@ -249,13 +254,17 @@ $mainColor: #a8890f;
       width: 100%;
       label {
         font-family: "Anton", sans-serif;
+        color: aliceblue;
+        svg {
+          fill: $mainColor;
+        }
         margin-bottom: 5px;
       }
       input {
         outline: none;
         border: none;
         padding: 1rem;
-        background: #d7d7d781;
+        background: #b6b6b6;
         border-bottom: 2px solid $mainColor;
         font-family: "Archivo Narrow", sans-serif;
         letter-spacing: 1.5px;

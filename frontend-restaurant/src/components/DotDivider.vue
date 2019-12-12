@@ -11,6 +11,7 @@ export default {};
 <style scoped>
 .wrapper {
   padding-bottom: 90px;
+  margin-top: 1rem;
 }
 
 .divider {

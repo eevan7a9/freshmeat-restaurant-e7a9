@@ -97,6 +97,9 @@ $mainColor: #a8890f;
     padding-top: 5rem;
   }
   #makeReservation {
+    background: url("~@/assets/images/brick-wall.jpg");
+    background-size: cover;
+    background-position: bottom;
     padding-bottom: 4rem;
   }
   /*------------------*/
