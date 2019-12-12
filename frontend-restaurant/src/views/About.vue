@@ -1,9 +1,12 @@
 <template>
   <div class="about-wrapper">
     <div class="about-content">
-      <div class="container">
+      <section class="container">
         <OurStory />
-      </div>
+      </section>
+      <section id="whyus">
+        <WhyUs />
+      </section>
     </div>
     <footer id="footer">
       <div class="container">
@@ -14,10 +17,12 @@
 </template>
 <script>
 import OurStory from "@/components/about/OurStory.vue";
+import WhyUs from "@/components/WhyUs.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   components: {
     OurStory,
+    WhyUs,
     Footer
   }
 };

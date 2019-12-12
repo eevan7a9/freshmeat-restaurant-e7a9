@@ -43,7 +43,6 @@ export default {
 $mainColor: #a8890f;
 
 .whyus-wrapper {
-  margin-top: 4rem;
   padding: 4rem 0;
   header {
     font-size: 2rem;

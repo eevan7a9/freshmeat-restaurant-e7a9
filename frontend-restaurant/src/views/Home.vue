@@ -86,6 +86,9 @@ $mainColor: #a8890f;
   #footer {
     background: $mainColor;
   }
+  #schedule {
+    margin-bottom: 4rem;
+  }
   #carousel {
     padding-top: 5rem;
     padding-bottom: 2rem;
