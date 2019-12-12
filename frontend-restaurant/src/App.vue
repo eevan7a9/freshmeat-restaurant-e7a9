@@ -20,4 +20,5 @@ export default {
 @import url("./assets/main.css");
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap");
 </style>

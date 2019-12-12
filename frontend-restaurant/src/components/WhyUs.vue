@@ -72,14 +72,14 @@ $mainColor: #a8890f;
       padding: 1rem 0;
     }
     h2 {
-      font-size: 18px;
+      font-size: 20px;
       color: $mainColor;
-      font-family: "Archivo Narrow", sans-serif;
+      font-family: "Bebas Neue", cursive;
       font-weight: 900;
-      text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #392d2a,
-        1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
-      letter-spacing: 2px;
+      text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #110c05,
+        1px -1px 1px #413f3f, -1px 1px 1px #ffd805, 0px 0px 0px #413f3f;
       padding: 1rem;
+      letter-spacing: 2px;
     }
     p {
       padding: 0 1rem;
