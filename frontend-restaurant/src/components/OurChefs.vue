@@ -3,7 +3,7 @@
     <header>Our Top Chefs</header>
     <DotDivider />
     <div class="chef">
-      <img src="@/assets/images/chef-woman.png" />
+      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-woman_QUcwRmq4q.png" />
       <div class="chef-info">
         <h1>Jane Doe</h1>
         <h2>Head Chef</h2>
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="chef">
-      <img src="@/assets/images/chef-redhat.png" />
+      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-redhat_btPAP3O99.png" />
       <div class="chef-info">
         <h1>Jasmine Smith</h1>
         <h2>Sous Chef</h2>

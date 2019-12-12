@@ -38,7 +38,7 @@ $mainColor: #a8890f;
     min-height: 100vh;
     .motto {
       height: 350px;
-      background-image: url("~@/assets/images/bg-restaurant.jpg");
+      background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-restaurant_RyZTyT0GE.jpg");
       background-size: cover;
       background-position: center;
       display: flex;

@@ -97,7 +97,7 @@ $mainColor: #a8890f;
     padding-top: 5rem;
   }
   #makeReservation {
-    background: url("~@/assets/images/brick-wall.jpg");
+    background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg");
     background-size: cover;
     background-position: bottom;
     padding-bottom: 4rem;

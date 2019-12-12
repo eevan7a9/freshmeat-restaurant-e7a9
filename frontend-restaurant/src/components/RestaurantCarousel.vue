@@ -15,10 +15,7 @@
       class="inner-carousel"
     >
       <slide v-for="carousel in carousel_items" v-bind:key="carousel.id">
-        <div
-          class="img-container"
-          :style="{'background-image': 'url(' + require('../assets/images/' + carousel.img_src)+')'}"
-        >
+        <div class="img-container" :style="'background-image: url('+carousel.img_src+')'">
           <div class="text-container">
             <header>{{ carousel.header }}</header>
             <p>{{ carousel.text }}</p>

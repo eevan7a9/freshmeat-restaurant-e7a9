@@ -28,7 +28,7 @@ export default {
 $mainColor: #a8890f;
 .reservation-wrapper {
   .reservation-content {
-    background: url("~@/assets/images/brick-wall.jpg");
+    background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg");
     background-size: cover;
     background-position: bottom;
     padding-bottom: 3rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="showcase-wrapper">
     <div class="img-wrapper">
-      <img src="~@/assets/images/showcase_img.png" />
+      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/showcase_img_ad8muMdxR.png" />
     </div>
     <div class="showcase-texts">
       <h1>100% Non-GMO</h1>
@@ -36,7 +36,7 @@ $mainColor: #a8890f;
 .showcase-wrapper {
   padding: 50px 0 50px 0;
   min-height: calc(100vh - 180px);
-  background-image: url("~@/assets/images/bg-restaurant.jpg");
+  background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-restaurant_RyZTyT0GE.jpg");
   background-size: cover;
   background-position: center;
   align-items: center;

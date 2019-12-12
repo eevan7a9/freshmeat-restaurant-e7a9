@@ -3,7 +3,7 @@
     <header>Our Story</header>
     <DotDivider />
     <div class="introduction-wrapper">
-      <img src="@/assets/images/people-chefs.jpg" />
+      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg" />
       <div class="introduction">
         <h1>We Started</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam vel voluptate mollitia culpa! Provident est reprehenderit ad et repellendus nulla cum iusto quos, deserunt ipsam accusantium aperiam aut? Reprehenderit aut voluptas earum expedita nam, enim blanditiis commodi delectus tenetur omnis, cupiditate quasi porro. Maiores similique eligendi dolorum? Sapiente, recusandae.</p>
