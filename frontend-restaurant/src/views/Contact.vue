@@ -75,7 +75,7 @@ export default {
 <style lang="scss" scoped>
 $mainColor: #a8890f;
 .contact-wrapper {
-  background: url("https://cdn.pixabay.com/photo/2016/11/21/16/02/bar-1846137_960_720.jpg");
+  background: url("https://cdn.pixabay.com/photo/2015/10/12/15/10/road-984251_960_720.jpg");
   background-position: bottom;
   background-size: cover;
   padding-top: 5rem;
@@ -101,7 +101,7 @@ $mainColor: #a8890f;
       margin-right: auto;
       margin-left: auto;
       border: 3px solid $mainColor;
-      background: #110c057c;
+      background: #110c059d;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
       label {
         font-size: 20px;
