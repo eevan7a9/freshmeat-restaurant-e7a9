@@ -26,7 +26,7 @@
         <li>Wed: 7:30 am</li>
         <li>Thu: 7:30 am</li>
         <li>Fri: 7:30 am</li>
-        <li>Sat: 6:30 am</li>
+        <li>Sat: 12:30 pm</li>
         <li>sun: 6:30 am</li>
       </ul>
     </div>
