@@ -38,9 +38,20 @@ $mainColor: #a8890f;
     min-height: 100vh;
     .motto {
       height: 350px;
-      background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-restaurant_RyZTyT0GE.jpg");
-      background-size: cover;
+      background-image: linear-gradient(
+          0deg,
+          rgba(21, 20, 21, 0.7),
+          rgba(0, 0, 0, 0.3)
+        ),
+        url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/people-chefs_ytH3lDk9O.jpg");
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -49,9 +60,10 @@ $mainColor: #a8890f;
         font-size: 2.5rem;
         color: aliceblue;
         font-family: "Anton", sans-serif;
-        padding: 1rem;
+        padding: 11rem 0;
         text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
           2px 3px #201f1e;
+        line-height: 3rem;
         text-align: left;
       }
     }

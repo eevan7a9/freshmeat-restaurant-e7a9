@@ -36,9 +36,15 @@ $mainColor: #a8890f;
 .showcase-wrapper {
   padding: 50px 0 50px 0;
   min-height: calc(100vh - 180px);
-  background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-restaurant_RyZTyT0GE.jpg");
-  background-size: cover;
+  background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-1200_KhS-Mlk8m.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   overflow: hidden;
 

@@ -6,6 +6,7 @@
       </div>
       <div class="chef-info">
         <h1>{{ chef.name }}</h1>
+        <h2>{{ chef.role }}</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?</p>
       </div>
     </div>
@@ -27,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$mainColor: #a8890f;
 .chefs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,6 +60,12 @@ export default {
         font-weight: 900;
         font-size: 20px;
         padding: 1rem;
+        text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #392d2a,
+          1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
+        color: $mainColor;
+      }
+      h2 {
+        padding: 10px;
       }
       p {
         text-align: left;

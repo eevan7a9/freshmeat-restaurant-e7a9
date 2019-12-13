@@ -85,7 +85,7 @@ $mainColor: #a8890f;
 .home {
   background: aliceblue;
   #signature_dish {
-    background: url("https://cdn.pixabay.com/photo/2017/12/03/20/31/background-2995826_960_720.png");
+    background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/snow-bg_5m8MHYLai.png");
     background-size: cover;
     background-position: bottom;
   }
@@ -98,6 +98,9 @@ $mainColor: #a8890f;
   #schedule {
     margin-bottom: 4rem;
   }
+  #whyus {
+    padding-bottom: 10rem;
+  }
   #carousel {
     padding-top: 5rem;
     padding-bottom: 2rem;
@@ -106,9 +109,15 @@ $mainColor: #a8890f;
     padding-top: 5rem;
   }
   #makeReservation {
-    background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg");
+    background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-1200_KhS-Mlk8m.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -140,14 +149,14 @@ $mainColor: #a8890f;
     height: 100px;
     position: absolute;
     left: 0px;
-    background: linear-gradient(to left bottom, $mainColor 49%, #e0dbb6 50%);
+    background: linear-gradient(to left bottom, $mainColor 49%, aliceblue 50%);
   }
   .skew-c-2 {
     width: 100%;
     height: 100px;
     position: absolute;
     left: 0px;
-    background: linear-gradient(to left bottom, #e0dbb6 49%, $mainColor 50%);
+    background: linear-gradient(to left bottom, aliceblue 49%, $mainColor 50%);
   }
 }
 </style>

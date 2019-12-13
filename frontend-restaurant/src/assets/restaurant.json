@@ -120,23 +120,23 @@
   "chefs": [
     {
       "id": 1,
-      "name": "Jane Doe",
+      "name": "Jane Frankins",
       "image_src": "https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-woman_QUcwRmq4q.png",
-      "role": "something",
+      "role": "Chef de Partie",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
     },
     {
       "id": 2,
       "name": "Drax Dist",
-      "image_src": "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/chef-bake__7dH7XyCs.jpg",
-      "role": "something",
+      "image_src": "https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/oldman__FmDzIC80d.png",
+      "role": "Chef de Partie",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
     },
     {
       "id": 3,
-      "name": "Kobe Bryant",
+      "name": "Kobe Jordan",
       "image_src": "https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-slicing_tczDrcR2k.png",
-      "role": "something",
+      "role": "Commis Chef ",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
     }
   ]
