@@ -251,7 +251,7 @@ $mainColor: #a8890f;
     border: 3px solid $mainColor;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
     padding: 2rem;
-    max-width: 700px;
+    max-width: 500px;
     margin-right: auto;
     margin-left: auto;
     .input-wrapper {

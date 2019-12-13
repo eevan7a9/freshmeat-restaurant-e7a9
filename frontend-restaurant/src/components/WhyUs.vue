@@ -43,6 +43,7 @@ export default {
 $mainColor: #a8890f;
 
 .whyus-wrapper {
+  background: #e0dbb6;
   padding: 4rem 0;
   header {
     font-size: 2rem;
@@ -58,6 +59,12 @@ $mainColor: #a8890f;
   .info {
     display: grid;
     grid-template-columns: auto auto;
+    background: #fff;
+    padding: 1rem 0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
     // background: aliceblue;
     img {
       max-height: 300px;

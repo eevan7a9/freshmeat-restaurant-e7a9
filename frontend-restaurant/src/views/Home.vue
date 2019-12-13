@@ -3,8 +3,10 @@
     <section id="showcase">
       <Showcase :scrollTarget="'#signature_dish'" @scrollTo="scrollTo" />
     </section>
-    <section class="container" id="signature_dish">
-      <SignatureDish />
+    <section id="signature_dish">
+      <div class="container">
+        <SignatureDish />
+      </div>
     </section>
 
     <section id="schedule">
@@ -23,12 +25,14 @@
         <RestaurantCarousel />
       </div>
     </section>
+
     <section id="chefs">
       <div class="container">
         <OurChefs />
       </div>
     </section>
     <div class="skew-cc"></div>
+
     <section id="gallery">
       <Gallery />
     </section>
@@ -80,6 +84,11 @@ export default {
 $mainColor: #a8890f;
 .home {
   background: aliceblue;
+  #signature_dish {
+    background: url("https://cdn.pixabay.com/photo/2017/12/03/20/31/background-2995826_960_720.png");
+    background-size: cover;
+    background-position: bottom;
+  }
   #schedule,
   #carousel,
   #gallery,
@@ -131,14 +140,14 @@ $mainColor: #a8890f;
     height: 100px;
     position: absolute;
     left: 0px;
-    background: linear-gradient(to left bottom, $mainColor 49%, aliceblue 50%);
+    background: linear-gradient(to left bottom, $mainColor 49%, #e0dbb6 50%);
   }
   .skew-c-2 {
     width: 100%;
     height: 100px;
     position: absolute;
     left: 0px;
-    background: linear-gradient(to left bottom, aliceblue 49%, $mainColor 50%);
+    background: linear-gradient(to left bottom, #e0dbb6 49%, $mainColor 50%);
   }
 }
 </style>
