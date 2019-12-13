@@ -3,9 +3,9 @@
     <header>Our Top Chefs</header>
     <DotDivider />
     <div class="chef">
-      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-woman_QUcwRmq4q.png" />
+      <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-holding_UaiwW2kO_.png" />
       <div class="chef-info">
-        <h1>Jane Doe</h1>
+        <h1>Morgan Doe</h1>
         <h2>Head Chef</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, odio nemo numquam molestias earum voluptatem suscipit exercitationem repellendus quidem commodi repellat aliquid cum explicabo reiciendis fuga illo? Dolores, sint reprehenderit.</p>
       </div>
@@ -47,7 +47,7 @@ $mainColor: #a8890f;
   }
   .chef {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 220px 1fr;
     background: #333;
     border: 3px $mainColor solid;
     max-width: 900px;
@@ -91,7 +91,7 @@ $mainColor: #a8890f;
         line-height: 20px;
       }
       &:hover {
-        background: rgba(0, 0, 0, 0.459);
+        background: rgba(0, 0, 0, 0.678);
         transition: 0.5s;
       }
     }

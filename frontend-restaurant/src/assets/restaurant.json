@@ -116,5 +116,28 @@
       "small": "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/tr:w-300,h-280/salmon_Ss3FAgCA3.jpg",
       "large": "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/salmon_Ss3FAgCA3.jpg"
     }
+  ],
+  "chefs": [
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "image_src": "https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-woman_QUcwRmq4q.png",
+      "role": "something",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
+    },
+    {
+      "id": 2,
+      "name": "Drax Dist",
+      "image_src": "https://ik.imagekit.io/wr5lnrww0q8/gallery-restaurant/chef-bake__7dH7XyCs.jpg",
+      "role": "something",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
+    },
+    {
+      "id": 3,
+      "name": "Kobe Bryant",
+      "image_src": "https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-slicing_tczDrcR2k.png",
+      "role": "something",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, molestiae amet tempore nulla quaerat assumenda architecto pariatur totam doloribus corrupti?"
+    }
   ]
 }

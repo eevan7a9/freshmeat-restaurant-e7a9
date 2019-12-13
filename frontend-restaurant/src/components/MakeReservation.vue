@@ -194,7 +194,7 @@
 import DotDivider from "@/components/DotDivider.vue";
 export default {
   props: {
-    pulse: Boolean
+    pulse: Number
   },
   components: {
     DotDivider

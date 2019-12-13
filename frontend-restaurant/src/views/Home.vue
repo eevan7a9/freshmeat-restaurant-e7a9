@@ -28,7 +28,7 @@
 
     <section id="chefs">
       <div class="container">
-        <OurChefs />
+        <TopChefs />
       </div>
     </section>
     <div class="skew-cc"></div>
@@ -54,7 +54,7 @@ import SignatureDish from "@/components/SignatureDish.vue";
 import Schedule from "@/components/Schedule.vue";
 import WhyUs from "@/components/WhyUs.vue";
 import RestaurantCarousel from "@/components/RestaurantCarousel";
-import OurChefs from "@/components/OurChefs.vue";
+import TopChefs from "@/components/team/TopChefs.vue";
 import Gallery from "@/components/Gallery.vue";
 import MakeReservation from "@/components/MakeReservation.vue";
 import Footer from "@/components/Footer.vue";
@@ -66,7 +66,7 @@ export default {
     Schedule,
     WhyUs,
     RestaurantCarousel,
-    OurChefs,
+    TopChefs,
     Gallery,
     MakeReservation,
     Footer
