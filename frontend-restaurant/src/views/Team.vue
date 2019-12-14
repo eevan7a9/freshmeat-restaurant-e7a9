@@ -19,12 +19,20 @@ import DotDivider from "@/components/DotDivider.vue";
 import Chefs from "@/components/team/Chefs.vue";
 import TopChefs from "@/components/team/TopChefs.vue";
 import Footer from "@/components/Footer.vue";
+import { mapActions } from "vuex";
 export default {
   components: {
     DotDivider,
     Chefs,
     TopChefs,
     Footer
+  },
+  methods: {
+    ...mapActions(["withColor"]),
+    submit() {}
+  },
+  created() {
+    this.withColor();
   }
 };
 </script>
@@ -32,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 $mainColor: #a8890f;
 .team-wrapper {
-  padding-top: 3rem;
+  padding-top: 130px;
   header {
     font-size: 2rem;
     font-weight: 900;

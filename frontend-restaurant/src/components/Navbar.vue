@@ -1,7 +1,9 @@
 <template>
-  <nav>
+  <nav
+    :class="{ 'fixed-navbar': !showNavbar, 'add-color' : addNavColor || coloredNav || navbar_colored }"
+  >
     <div class="container">
-      <label class="logo">LOGO</label>
+      <label class="logo">FreshMeat</label>
       <ul id="navItems">
         <li>
           <router-link to="/" @click.native="toggleNavbar">HOME</router-link>
@@ -58,18 +60,54 @@
   </nav>
 </template>
 <script>
+const OFFSET = 60;
+
+import { mapGetters } from "vuex";
 export default {
   name: "Navbar",
+  props: {
+    coloredNav: Boolean
+  },
   data() {
     return {
-      toggled: 0
+      toggled: 0,
+      showNavbar: true,
+      lastScrollPosition: 0,
+      addNavColor: 0,
+      scrollValue: 0
     };
+  },
+  computed: mapGetters(["navbar_colored"]),
+  mounted() {
+    this.lastScrollPosition = window.pageYOffset;
+    window.addEventListener("scroll", this.onScroll);
+    const viewportMeta = document.createElement("meta");
+    viewportMeta.name = "viewport";
+    viewportMeta.content = "width=device-width, initial-scale=1";
+    document.head.appendChild(viewportMeta);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
   },
   methods: {
     toggleNavbar() {
       let x = document.querySelector("#navItems");
       x.classList.toggle("active");
       this.toggled = !this.toggled;
+    },
+    onScroll() {
+      if (window.pageYOffset < 2) {
+        this.addNavColor = 0;
+      }
+      if (window.pageYOffset >= 2) {
+        this.addNavColor = 1;
+      }
+      if (Math.abs(window.pageYOffset - this.lastScrollPosition) < OFFSET) {
+        return;
+      }
+      this.showNavbar = window.pageYOffset < this.lastScrollPosition;
+      this.lastScrollPosition = window.pageYOffset;
     }
   }
 };
@@ -78,9 +116,34 @@ export default {
 nav {
   height: 80px;
   width: 100%;
-  background: #a8890f;
-  top: 0;
-  position: sticky;
+  position: fixed;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s all ease-out;
+  border-bottom: 2px solid #d5ac0c;
+  &.fixed-navbar {
+    box-shadow: none;
+    transform: translate3d(0, -100%, 0);
+  }
+  &.add-color {
+    background: #a8890f;
+    transition: 0.5s;
+    a {
+      color: aliceblue;
+      text-shadow: 0px 0px 0px #a48474, -1px -1px 0px #392d2a,
+        1px -1px 1px #413f3f, -1px 1px 1px #413f3f, 0px 0px 0px #413f3f;
+      border: 1px solid transparent;
+    }
+    a.router-link-exact-active,
+    a:hover {
+      transition: 0.5s;
+      border: 1px solid white;
+    }
+    label.logo {
+      text-shadow: 2px 0 #221d1d, 0 1px #827373, 3.5px 3px #443f3c,
+        2px 3px #201f1e;
+    }
+  }
   z-index: 10;
   ul {
     float: right;
@@ -92,8 +155,13 @@ nav {
     line-height: 80px;
   }
   a {
-    color: white;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1.5px;
+    color: #d5ac0c;
+    font-weight: 900;
     font-size: 18px;
+    text-shadow: 2px 2px 13px #000, -1px -1px 0px #060505, 1px -1px 1px #000,
+      -1px 1px 1px #000, 0px 0px 0px #413f3f;
     padding: 7px 10px;
     text-decoration: none;
     text-transform: uppercase;
@@ -103,7 +171,7 @@ nav {
   a.router-link-exact-active,
   a:hover {
     transition: 0.5s;
-    border: 1px solid white;
+    border: 2px solid #d5ac0c;
   }
   #icon {
     color: white;
@@ -121,6 +189,10 @@ nav {
     padding: 0 100px;
     line-height: 80px;
     color: white;
+    font-family: "Anton", sans-serif;
+
+    text-shadow: 2px 0 #ea6300, 0 1px #6a3719, 3.5px 3px #d2a800,
+      2px 3px #e67e16;
   }
 }
 

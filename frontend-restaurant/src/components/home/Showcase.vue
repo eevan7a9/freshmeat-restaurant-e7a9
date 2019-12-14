@@ -34,8 +34,8 @@ export default {
 <style lang="scss" scoped>
 $mainColor: #a8890f;
 .showcase-wrapper {
-  padding: 50px 0 50px 0;
-  min-height: calc(100vh - 180px);
+  padding: 130px 0 50px 0;
+  min-height: calc(100vh - 100px);
   background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-1200_KhS-Mlk8m.jpg");
   /* Full height */
   height: 100%;

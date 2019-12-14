@@ -19,6 +19,7 @@
   </div>
 </template>
 <script>
+import { mapActions } from "vuex";
 import OurStory from "@/components/about/OurStory.vue";
 import WhyUs from "@/components/WhyUs.vue";
 import Footer from "@/components/Footer.vue";
@@ -27,6 +28,12 @@ export default {
     OurStory,
     WhyUs,
     Footer
+  },
+  methods: {
+    ...mapActions(["withColor"])
+  },
+  created() {
+    this.withColor();
   }
 };
 </script>

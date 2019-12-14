@@ -58,6 +58,7 @@ import TopChefs from "@/components/team/TopChefs.vue";
 import Gallery from "@/components/Gallery.vue";
 import MakeReservation from "@/components/MakeReservation.vue";
 import Footer from "@/components/Footer.vue";
+import { mapActions } from "vuex";
 export default {
   name: "home",
   components: {
@@ -72,11 +73,15 @@ export default {
     Footer
   },
   methods: {
+    ...mapActions(["withoutColor"]),
     scrollTo(selector) {
       document.querySelector(selector).scrollIntoView({
         behavior: "smooth"
       });
     }
+  },
+  created() {
+    this.withoutColor();
   }
 };
 </script>

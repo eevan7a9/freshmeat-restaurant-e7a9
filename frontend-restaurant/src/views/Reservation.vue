@@ -16,10 +16,17 @@
 <script>
 import MakeReservation from "@/components/MakeReservation.vue";
 import Footer from "@/components/Footer.vue";
+import { mapActions } from "vuex";
 export default {
   components: {
     MakeReservation,
     Footer
+  },
+  methods: {
+    ...mapActions(["withColor"])
+  },
+  created() {
+    this.withColor();
   }
 };
 </script>
@@ -31,6 +38,7 @@ $mainColor: #a8890f;
     background: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/brick-wall_N1uwkzJdG.jpg");
     background-size: cover;
     background-position: bottom;
+    padding-top: 130px;
     padding-bottom: 3rem;
     min-height: 100vh;
   }

@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 $mainColor: #a8890f;
 .our-story-wrapper {
-  padding: 3rem 0;
+  padding: 130px 0 3rem 0;
   header {
     font-size: 2rem;
     font-weight: 900;

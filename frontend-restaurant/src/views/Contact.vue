@@ -54,6 +54,7 @@ import Map from "@/components/contact/Map.vue";
 import SocialIcons from "@/components/contact/SocialIcons.vue";
 import DotDivider from "@/components/DotDivider.vue";
 import Footer from "@/components/Footer.vue";
+import { mapActions } from "vuex";
 export default {
   components: {
     DotDivider,
@@ -67,7 +68,11 @@ export default {
     };
   },
   methods: {
+    ...mapActions(["withColor"]),
     submit() {}
+  },
+  created() {
+    this.withColor();
   }
 };
 </script>
@@ -78,7 +83,7 @@ $mainColor: #a8890f;
   background: url("https://cdn.pixabay.com/photo/2015/10/12/15/10/road-984251_960_720.jpg");
   background-position: bottom;
   background-size: cover;
-  padding-top: 5rem;
+  padding-top: 150px;
   font-family: "Bebas Neue", cursive;
   header {
     font-size: 2rem;
