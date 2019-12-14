@@ -20,9 +20,6 @@ export default {
     return {
       chefs: Restaurant["chefs"]
     };
-  },
-  created() {
-    console.log(this.chefs);
   }
 };
 </script>

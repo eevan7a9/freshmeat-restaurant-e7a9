@@ -5,7 +5,7 @@
     <div class="card-wrapper">
       <div class="card" v-for="(dish, index) of signature_dishes" :key="index">
         <div class="card-body">
-          <img src="https://via.placeholder.com/250" alt="image" />
+          <img :src="dish.image_src" alt="image" />
           <h1>{{ dish.name }}</h1>
           <p>{{ dish.description }}</p>
           <div>${{ dish.price }}</div>
@@ -18,6 +18,8 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import DotDivider from "@/components/DotDivider.vue";
+
+console.log('hello')
 export default {
   components: {
     DotDivider
