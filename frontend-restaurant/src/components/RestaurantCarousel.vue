@@ -7,7 +7,7 @@
       :mouse-drag="true"
       paginationPosition="bottom"
       :centerMode="true"
-      :autoplay="false"
+      :autoplay="true"
       :autoplayTimeout="4000"
       :loop="true"
       paginationColor="#333"

@@ -104,11 +104,8 @@ $mainColor: #a8890f;
 .gallery-wrapper {
   padding: 3rem 0;
   .gallery {
-    // background: aliceblue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // border: 5px solid aliceblue;
-    // grid-column-gap: 10px;
     align-items: center;
     .images {
       display: flex;
@@ -118,12 +115,11 @@ $mainColor: #a8890f;
         height: auto;
         cursor: pointer;
         width: 100%;
-        opacity: 85%;
+        opacity: 0.85;
         border: 5px solid aliceblue;
         &:hover {
-          opacity: 100%;
+          opacity: 1;
           transition: 0.5s;
-          // border: 5px solid aliceblue;
           border: none;
           margin: 5px 0;
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);

@@ -8,7 +8,9 @@
       <h2>I want more, I want food. Fresh Food - it's like heaven!</h2>
     </div>
     <SocialIcons class="social-icons" />
-    <button>Reservation</button>
+    <router-link to="/reservation">
+      <button>Reservation</button>
+    </router-link>
     <MouseScroller @scrollTo="scrollTo" :target="scrollTarget" />
   </div>
 </template>
@@ -39,6 +41,10 @@ $mainColor: #a8890f;
   background-image: url("https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/bg-1200_KhS-Mlk8m.jpg");
   /* Full height */
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -85,6 +91,8 @@ $mainColor: #a8890f;
     background: $mainColor;
     color: aliceblue;
     padding: 1rem;
+    font-weight: bold;
+    font-family: "Archivo Narrow", sans-serif;
     border: 2px solid aliceblue;
     border-radius: 5px;
     text-transform: uppercase;
@@ -95,9 +103,6 @@ $mainColor: #a8890f;
     transition: 1s;
     color: $mainColor;
     border-color: $mainColor;
-    padding-left: 2rem;
-    font-weight: 700;
-    padding-right: 2rem;
   }
   @keyframes float {
     0% {

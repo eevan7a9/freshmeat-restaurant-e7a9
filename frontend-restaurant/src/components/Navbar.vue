@@ -3,7 +3,9 @@
     :class="{ 'fixed-navbar': !showNavbar, 'add-color' : addNavColor || coloredNav || navbar_colored }"
   >
     <div class="container">
-      <label class="logo">FreshMeat</label>
+      <router-link to="/home">
+        <label class="logo">FreshMeat</label>
+      </router-link>
       <ul id="navItems">
         <li>
           <router-link to="/" @click.native="toggleNavbar">HOME</router-link>
@@ -156,7 +158,7 @@ nav {
   }
   a {
     font-family: "Anton", sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
     color: #d5ac0c;
     font-weight: 900;
     font-size: 18px;
@@ -190,22 +192,24 @@ nav {
     line-height: 80px;
     color: white;
     font-family: "Anton", sans-serif;
-
+    text-transform: none;
     text-shadow: 2px 0 #ea6300, 0 1px #6a3719, 3.5px 3px #d2a800,
       2px 3px #e67e16;
   }
 }
 
 @media (max-width: 1048px) {
-  label.logo {
-    font-size: 32px;
-    padding-left: 60px;
-  }
-  nav ul {
-    margin-right: 20px;
-  }
-  nav a {
-    font-size: 17px;
+  nav {
+    label.logo {
+      font-size: 30px;
+      padding: 0 50px;
+    }
+    ul {
+      margin-right: 20px;
+    }
+    a {
+      font-size: 17px;
+    }
   }
 }
 @media (max-width: 909px) {
@@ -243,7 +247,7 @@ nav {
 }
 @media (max-width: 500px) {
   nav label.logo {
-    padding: 0 25px;
+    padding: 0 15px;
   }
 }
 </style>
