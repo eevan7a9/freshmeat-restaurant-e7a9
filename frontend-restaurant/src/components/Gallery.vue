@@ -1,7 +1,19 @@
 <template>
   <div class="gallery-wrapper">
     <div class="gallery container">
-      <div class="images" v-for="(image, index) in images" :key="index">
+      <div
+        class="images"
+        v-for="(image, index) in images"
+        :key="index"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="bottom"
+      >
         <img :src="image.small" @click="selectImage(index)" />
       </div>
     </div>
@@ -92,25 +104,31 @@ $mainColor: #a8890f;
 .gallery-wrapper {
   padding: 3rem 0;
   .gallery {
-    background: aliceblue;
+    // background: aliceblue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border: 5px solid aliceblue;
+    // border: 5px solid aliceblue;
     // grid-column-gap: 10px;
-    img {
-      height: auto;
-      cursor: pointer;
-      width: 100%;
-      opacity: 85%;
-      &:hover {
-        opacity: 100%;
-        transition: 0.5s;
-        // border: 5px solid aliceblue;
-        margin: 5px 0;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
-        border-bottom: 0;
-        border-left: 0;
-        width: 95%;
+    align-items: center;
+    .images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: auto;
+        cursor: pointer;
+        width: 100%;
+        opacity: 85%;
+        border: 5px solid aliceblue;
+        &:hover {
+          opacity: 100%;
+          transition: 0.5s;
+          // border: 5px solid aliceblue;
+          border: none;
+          margin: 5px 0;
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
+          width: 90%;
+        }
       }
     }
   }

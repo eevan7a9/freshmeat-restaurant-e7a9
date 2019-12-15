@@ -4,10 +4,15 @@ import router from './router'
 import store from './store'
 import { Icon } from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
 
 new Vue({
+  created() {
+    AOS.init()
+  },
   router,
   store,
   render: h => h(App)

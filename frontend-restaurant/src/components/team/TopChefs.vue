@@ -2,7 +2,17 @@
   <div class="chefs-wrapper">
     <header>Our Top Chefs</header>
     <DotDivider />
-    <div class="chef">
+    <div
+      class="chef"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-easing="linear"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="bottom"
+    >
       <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-holding_UaiwW2kO_.png" />
       <div class="chef-info">
         <h1>Morgan Doe</h1>
@@ -10,7 +20,17 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, odio nemo numquam molestias earum voluptatem suscipit exercitationem repellendus quidem commodi repellat aliquid cum explicabo reiciendis fuga illo? Dolores, sint reprehenderit.</p>
       </div>
     </div>
-    <div class="chef">
+    <div
+      class="chef"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-easing="linear"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="bottom"
+    >
       <img src="https://ik.imagekit.io/wr5lnrww0q8/restaurant-resource/chef-redhat_btPAP3O99.png" />
       <div class="chef-info">
         <h1>Jasmine Smith</h1>

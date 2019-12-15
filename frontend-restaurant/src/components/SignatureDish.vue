@@ -3,7 +3,19 @@
     <header>Signature Dishes</header>
     <DotDivider />
     <div class="card-wrapper">
-      <div class="card" v-for="(dish, index) of signature_dishes" :key="index">
+      <div
+        class="card"
+        v-for="(dish, index) of signature_dishes"
+        :key="index"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="bottom"
+      >
         <div class="card-body">
           <img :src="dish.image_src" alt="image" />
           <h1>{{ dish.name }}</h1>
@@ -19,7 +31,7 @@
 import { mapGetters, mapActions } from "vuex";
 import DotDivider from "@/components/DotDivider.vue";
 
-console.log('hello')
+console.log("hello");
 export default {
   components: {
     DotDivider

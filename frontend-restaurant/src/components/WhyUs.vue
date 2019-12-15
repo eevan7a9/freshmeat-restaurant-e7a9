@@ -5,7 +5,17 @@
       <DotDivider />
       <div class="parallax">
         <div class="inner-whyus">
-          <div class="info">
+          <div
+            class="info"
+            data-aos="fade-down-left"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="linear"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="bottom"
+          >
             <img src="@/assets/images/chef.svg" alt srcset />
             <div class="left">
               <h1>Delicious</h1>
@@ -14,7 +24,17 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis sequi aut tempore quas suscipit!</p>
             </div>
           </div>
-          <div class="info">
+          <div
+            class="info"
+            data-aos="fade-down-right"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="bottom"
+          >
             <div class="right">
               <h1>Healthy</h1>
               <h2>100% Non-GMO Ingredients</h2>
@@ -22,7 +42,17 @@
             </div>
             <img src="@/assets/images/doctor.svg" alt srcset />
           </div>
-          <div class="info">
+          <div
+            class="info"
+            data-aos="fade-down-left"
+            data-aos-duration="800"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="ease-out-sine"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="bottom"
+          >
             <img src="@/assets/images/waitress.svg" alt srcset />
             <div class="left">
               <h1>Customer Service</h1>
