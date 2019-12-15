@@ -30,8 +30,6 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 import DotDivider from "@/components/DotDivider.vue";
-
-console.log("hello");
 export default {
   components: {
     DotDivider
@@ -103,6 +101,18 @@ $mainColor: #a8890f;
         font-weight: 900;
       }
     }
+  }
+}
+@media (max-width: 900px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
   }
 }
 </style>

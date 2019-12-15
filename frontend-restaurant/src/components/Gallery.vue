@@ -159,4 +159,9 @@ $mainColor: #a8890f;
     }
   }
 }
+@media (max-width: 600px) {
+  .gallery-wrapper .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 </style>

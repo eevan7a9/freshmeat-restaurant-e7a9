@@ -241,4 +241,9 @@ nav {
     }
   }
 }
+@media (max-width: 500px) {
+  nav label.logo {
+    padding: 0 25px;
+  }
+}
 </style>

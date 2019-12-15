@@ -185,4 +185,20 @@ $mainColor: #a8890f;
     }
   }
 }
+@media (max-width: 800px) {
+  .whyus-wrapper .info {
+    grid-template-columns: 1fr;
+    // text-align: center;
+    align-items: center;
+    justify-items: center;
+    img {
+      order: 1;
+    }
+    .left,
+    .right {
+      text-align: center;
+      order: 2;
+    }
+  }
+}
 </style>

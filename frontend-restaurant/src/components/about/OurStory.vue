@@ -71,4 +71,15 @@ $mainColor: #a8890f;
     }
   }
 }
+@media (max-width: 850px) {
+  .our-story-wrapper .introduction-wrapper {
+    grid-template-columns: 1fr;
+    img {
+      grid-column: 1;
+    }
+    .introduction {
+      grid-column: 1;
+    }
+  }
+}
 </style>

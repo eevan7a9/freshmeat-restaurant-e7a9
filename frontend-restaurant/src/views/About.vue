@@ -44,7 +44,6 @@ $mainColor: #a8890f;
   .about-content {
     min-height: 100vh;
     .motto {
-      height: 350px;
       background-image: linear-gradient(
           0deg,
           rgba(21, 20, 21, 0.7),
@@ -77,6 +76,22 @@ $mainColor: #a8890f;
   }
   #footer {
     background: $mainColor;
+  }
+}
+@media (max-width: 1100px) {
+  .about-wrapper .about-content .motto {
+    h1 {
+      // padding: 11rem 0;
+      font-size: 2rem;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .about-wrapper .about-content .motto {
+    h1 {
+      padding: 6rem 0;
+      font-size: 20px;
+    }
   }
 }
 </style>

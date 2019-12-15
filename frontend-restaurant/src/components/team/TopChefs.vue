@@ -117,4 +117,26 @@ $mainColor: #a8890f;
     }
   }
 }
+@media (max-width: 700px) {
+  .chefs-wrapper .chef {
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-right: 0;
+    img {
+      height: auto;
+      max-width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .chef-info {
+      height: auto;
+      width: auto;
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
+}
 </style>

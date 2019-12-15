@@ -287,9 +287,11 @@ $mainColor: #a8890f;
           transition: 1s;
         }
         &:focus + span {
-          background: red;
+          background: rgb(42, 189, 13);
           width: 100%;
           transition: 1s;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
         }
       }
       span {

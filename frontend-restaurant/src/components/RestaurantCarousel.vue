@@ -85,4 +85,16 @@ export default {
     }
   }
 }
+@media (max-width: 800px) {
+  .carousel-wrapper {
+    padding: 2rem 0;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-wrapper {
+    .img-container {
+      height: 500px;
+    }
+  }
+}
 </style>
