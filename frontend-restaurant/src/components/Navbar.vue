@@ -3,9 +3,7 @@
     :class="{ 'fixed-navbar': !showNavbar, 'add-color' : addNavColor || coloredNav || navbar_colored }"
   >
     <div class="container">
-      <router-link to="/home">
-        <label class="logo">FreshMeat</label>
-      </router-link>
+      <label class="logo" @click="toggleLogo">FreshMeat</label>
       <ul id="navItems">
         <li>
           <router-link to="/" @click.native="toggleNavbar">HOME</router-link>
@@ -110,6 +108,11 @@ export default {
       }
       this.showNavbar = window.pageYOffset < this.lastScrollPosition;
       this.lastScrollPosition = window.pageYOffset;
+    },
+    toggleLogo() {
+      if (this.$route.name !== "home") {
+        this.$router.push({ name: "home" });
+      }
     }
   }
 };
