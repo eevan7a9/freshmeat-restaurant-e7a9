@@ -106,6 +106,8 @@ $mainColor: aliceblue;
       //   padding: 0 1rem;
       input {
         -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         width: 100%;
         margin-top: 10px;
         padding: 15px 5px;
