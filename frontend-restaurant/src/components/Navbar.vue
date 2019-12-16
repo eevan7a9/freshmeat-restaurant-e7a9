@@ -153,7 +153,7 @@ nav {
   }
   li {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 4px;
     line-height: 80px;
   }
   a {
@@ -174,6 +174,7 @@ nav {
   a:hover {
     transition: 0.5s;
     border: 2px solid #d5ac0c;
+    background: rgba(240, 248, 255, 0.205);
   }
   #icon {
     color: white;
