@@ -125,6 +125,7 @@ nav {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.62);
   transform: translate3d(0, 0, 0);
   transition: 0.4s all ease-out;
+  background: #130b067a;
   border-bottom: 2px solid #d5ac0c;
   &.fixed-navbar {
     box-shadow: none;
@@ -162,11 +163,11 @@ nav {
   a {
     font-family: "Anton", sans-serif;
     letter-spacing: 3px;
-    color: #d5ac0c;
+    color: #fffdf4;
     font-weight: 900;
     font-size: 18px;
-    text-shadow: 2px 2px 13px #000, -1px -1px 0px #060505, 1px -1px 1px #000,
-      -1px 1px 1px #000, 0px 0px 0px #413f3f;
+    text-shadow: 2px 2px 5px #e28900, -1px -1px 0 #d88b0d, 1px -1px 1px #c37f00,
+      -1px 1px 1px #b77700, 0 0 0 #ab7400;
     padding: 7px 10px;
     text-decoration: none;
     text-transform: uppercase;
