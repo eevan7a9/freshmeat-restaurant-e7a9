@@ -7,7 +7,7 @@
         <div class="inner-whyus">
           <div
             class="info"
-            data-aos="fade-down-left"
+            data-aos="zoom-out-down"
             data-aos-duration="800"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -26,7 +26,7 @@
           </div>
           <div
             class="info"
-            data-aos="fade-down-right"
+            data-aos="zoom-out-down"
             data-aos-duration="800"
             data-aos-offset="200"
             data-aos-delay="50"
@@ -44,7 +44,7 @@
           </div>
           <div
             class="info"
-            data-aos="fade-down-left"
+            data-aos="zoom-out-down"
             data-aos-duration="800"
             data-aos-offset="200"
             data-aos-delay="50"
